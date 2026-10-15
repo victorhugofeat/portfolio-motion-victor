@@ -1,0 +1,13 @@
+ÁUDIOS DO PORTFÓLIO PUBLICADO DE VICTOR HUGO BOM — 45 SEGUNDOS
+
+audio_base_referencia.wav: a trilha base exatamente com o ganho, o ducking e o fade usados no vídeo. Contém música e efeitos já presentes na referência; não é uma faixa de música limpa. Esses efeitos embutidos não podem ser separados com exatidão a partir dos arquivos disponíveis.
+
+efeitos_adicionais_timeline.wav: todos os efeitos adicionais do projeto, na posição e com o volume/estéreo usados no vídeo, em uma faixa de 45 segundos.
+
+efeitos-individuais/: 94 arquivos, um para cada evento sonoro adicional, sem o silêncio anterior da timeline. O nome inclui tipo, ordem e instante de entrada no vídeo. Repetições permanecem separadas para preservar variações de timbre, volume e posição estéreo.
+
+Para reconstruir: coloque audio_base_referencia.wav e efeitos_adicionais_timeline.wav em 00:00, com ganho 0 dB (100%). Ou substitua a faixa de efeitos pelos WAVs individuais nos instantes do manifest.json. Não use a faixa de efeitos e os individuais simultaneamente, pois duplicaria os efeitos.
+
+Formato: WAV estéreo, 48 kHz, PCM float 32 bits. A reconstrução determinística foi comparada ao mix original existente e resultou em amostras PCM16 idênticas. Os MP4s usam compressão AAC, portanto seu áudio decodificado pode diferir ligeiramente do master WAV.
+
+Nenhum vídeo foi renderizado novamente nem alterado.
